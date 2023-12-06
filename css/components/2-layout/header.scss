@@ -1,0 +1,78 @@
+.header {
+  position: absolute;
+  top: 100px;
+  left: 36px;
+  width: calc(100% - 72px);
+  z-index: 10;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0px 4px 4px 0px #00000021;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 1118px
+@mixin header-xlg-xxlg {
+  .header {
+    top: 65px;
+    &__inner {
+      &-logo {
+        width: 155px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .3s ease;
+    &.active {
+      background-color: $main;
+    }
+    &__inner {
+      padding: 35px 0;
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+  .header {
+    &__inner {
+      padding: 25px 0;
+      &-logo {
+        width: 140px;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

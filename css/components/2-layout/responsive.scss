@@ -1,0 +1,211 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+//   @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+//   @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  p {
+    &.ex {
+      font-size: 18px;
+    }
+  }
+  .button {
+    padding: 15px 20px;
+    font-size: 15px;
+    &.primary {
+      &.big {
+        font-size: 17px;
+      }
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include trust-xlg-xxlg;
+  @include tarif-xlg-xxlg;
+  @include faq-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 15px;
+    &.sm {
+      font-size: 14px;
+    }
+    &.big {
+      font-size: 16px;
+    }
+    &.ex {
+      font-size: 15px;
+    }
+  }
+  .main {
+    padding: 0;
+  }
+  .auto__container {
+    &.sm {
+      padding: 0 30px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include trailers-lg-xlg;
+  @include tarif-lg-xlg;
+  @include reviews-lg-xlg;
+  @include map-lg-xlg;
+  @include footer-lg-xlg;
+}
+// 930px
+@include md-lg {
+  @include hero-md-lg;
+  @include trust-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 22px;
+    &.sm {
+      padding: 0 22px;
+    }
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+    &.sm {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    &.sm {
+        font-size: 35px;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 23px;
+    &.big {
+        font-size: 22px;
+    }
+  }
+  .button {
+    &.uniq {
+        padding: 20px 30px;
+        font-size: 16px;
+    }
+  }
+  @include hero-sm-md;
+  @include trust-sm-md;
+  @include tarif-sm-md;
+  @include reviews-sm-md;
+  @include faq-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include tarif-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 23px;
+    &.sm {
+      font-size: 23px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+    &.sm {
+      font-size: 13px;
+    }
+    &.big {
+      font-size: 14px;
+    }
+    &.ex {
+      font-size: 13px;
+    }
+  }
+  .button {
+    padding: 15px 18px;
+    font-size: 14px;
+
+    &.primary {
+      border-radius: 12px;
+      border-width: 2px;
+      &.big {
+        border-width: 2px;
+        font-size: 15px;
+      }
+    }
+    &.uniq {
+        padding: 17px 21px;
+        font-size: 13px;
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include trust-xsm-sm;
+  @include trailers-xsm-sm;
+  @include tarif-xsm-sm;
+  @include map-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include trailers-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

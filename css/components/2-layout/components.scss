@@ -1,0 +1,245 @@
+h1 {
+  font-family: $sourceCode;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 129.5%;
+}
+
+h2 {
+  font-family: $sourceCode;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  &.sm {
+    font-size: 32px;
+  }
+  span {
+    background: linear-gradient(90deg, #ed6ea0, #ec8c69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+h3 {
+  font-family: $nunitoSans;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $sourceCode;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  &.big {
+    font-size: 25px;
+    line-height: 100%;
+  }
+}
+
+h5 {
+  font-family: $sourceCode;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ed719c;
+}
+p {
+  &.sm {
+    font-size: 15px;
+  }
+  &.big {
+    font-size: 18px;
+  }
+  &.ex {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+.main {
+  overflow: hidden;
+  padding: 34px 36px 0;
+  position: relative;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.03;
+    pointer-events: none;
+    img {
+      width: 100%;
+    }
+  }
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 20px 30px;
+  font-size: 18px;
+  line-height: 125%;
+  &.primary {
+    background: linear-gradient(90deg, #ed6ea0 0%, #ec8c69 100%);
+    box-shadow: 8px 24px 35px rgba(236, 135, 115, 0.13);
+    border-radius: 18px;
+    font-family: $inter;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    // border: 3px solid rgba(255, 255, 255, 0.15);
+
+    &.big {
+      font-family: $nunitoSans;
+      border-width: 4px;
+      box-shadow: 0px 24px 35px rgba(237, 121, 142, 0.19);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 125%;
+    }
+    &:hover {
+      opacity: 1;
+      &::before {
+        opacity: 1;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: linear-gradient(90deg, #ec8c69 0%, #ed6ea0 100%);
+
+      box-shadow: 0px 0 38px rgba(237, 121, 142, 0.4);
+      border-radius: 18px;
+      opacity: 0;
+      transition: 0.3s ease;
+      pointer-events: none;
+    }
+  }
+  &.secondary {
+    background: linear-gradient(
+      90deg,
+      rgba(237, 110, 160, 0.1) 0%,
+      rgba(236, 140, 105, 0.1) 100%
+    );
+    border: 1px solid #ed798d;
+    border-radius: 15px;
+    font-family: $sourceCode;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: $primary;
+      border-radius: 15px;
+      opacity: 0;
+      transition: 0.3s ease;
+      pointer-events: none;
+      box-shadow: 0px 0 38px rgba(237, 121, 142, 0.4);
+
+    }
+    &:hover {
+      opacity: 1;
+      border-color: transparent;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &.uniq {
+    padding: 24px 35px;
+    border-radius: 18px;
+    font-family: $nunitoSans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-transform: uppercase;
+    background: url("../images/icons/button-border.svg") no-repeat center;
+    background-size: contain;
+    position: relative;
+    &:hover {
+      opacity: 1;
+      background: url("../images/icons/button-bg.svg") no-repeat center;
+      background-size: contain;
+      &::before {
+        opacity: 1;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border-radius: 18px;
+      opacity: 0;
+      transition: 0.3s ease;
+      pointer-events: none;
+      box-shadow: 0px 0 20px rgba(237, 121, 142, 0.5);
+
+    }
+  }
+  span {
+    position: relative;
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    color: $white;
+    transition: 0.3s ease;
+    position: relative;
+  }
+}
+.video {
+  padding-bottom: 60%;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
+  video,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include fullImage;
+    z-index: 2;
+  }
+  img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include fullImage;
+  }
+}
